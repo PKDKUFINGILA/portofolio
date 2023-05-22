@@ -1,0 +1,180 @@
+/***************************************************** Tous les medias***********************************/
+body{
+  background-color: #e2f2fd;
+  margin: 0;
+  padding: 0;
+}
+.bg-primary{
+  background-color: #0345a1 !important;
+}
+header .navbar-brand{
+  margin-top: 35px;
+  margin-right: 0;
+}
+header .navbar-brand img{
+  border: 8px solid;
+  width: 75%;
+  margin-top: 20px;
+  margin-left: 33px;
+}
+header .container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+/***************************************************** code pour les sections ************************************************/
+#moi, #experiences, #formation, #competence, #langue, #centreInteret, #qualite, #contact{
+  height: 100vh;
+}
+#experiences,#formation, #competence, #langue, #centreInteret, #qualite, #contact{
+  padding: 80px 0.8em 0 0.8em;
+}
+.myTitle{
+  color: #9933cc;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-style: italic;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+#experiences p, #experiences ul, #formation p, #langue p, #centreInteret p, #qualite p{
+  font-style: italic;
+  color: #0345a1;
+}
+#experiences p, #contact p{
+  text-align: center;
+}
+#experiences .annee, #formation .annee{
+  font-weight: bold;
+  text-decoration: underline;
+}
+/***************************************************** Compétences ********************************/
+#competence .progress{  
+  margin-top: 30px;
+  height: 50px;
+  background-color: #e57373;
+}
+#competence .progress-bar{
+  font-size: 1.9em;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+/********************************* Langues parlées, Centre d'intérêt et Qualités ********************************/
+#langue p, #centreInteret p, #qualite p{
+  margin-top: 20px;
+  margin-left: 3.5em;
+}
+/*********************************** caret ********************************************/
+#caret{
+  /*bottom: 8em;
+  right: 0.8em;
+  position:  fixed;*/
+  font-size: 40px;
+  float: right
+}
+/***************************************************** pc ********************************/
+@media (max-width: 767.98px){
+  #moi img{
+    width: 80%;
+    border: 8px solid #fff;
+    margin: 11em 0 0 0.2em
+  }
+}
+
+/***************************************************** tablette ********************************/
+@media (min-width: 768px){
+    #moi img{
+    width: 500px;
+    border: 8px solid #fff;
+    margin: 4em 0 0 0.2em
+    }
+}
+
+/***************************************************** mobil et tablette*********************************/
+@media (max-width: 991.98px){
+  header .navbar-brand{
+    margin-top: 0;
+    padding-left: 10px
+  }
+  header .navbar-brand img{
+    display: none;
+  }
+  header ul{
+    text-align: center;
+  }
+  #moi .laptop{
+    display: none
+  }
+  #moi{
+    background-color: #0345a1;
+  }
+  #moi .content{
+    width: 100%;
+    text-align: center;
+  }
+  #moi h3, #moi h4{
+    color: #fff;
+  }
+  #moi h3{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold
+  }
+  #moi h4{
+    font-size: 22px;
+  }
+  /* #moi .btn{
+    font-size: 1.5em; 
+  } */
+}
+
+/***************************************************** pc et Tv ********************************/
+@media (min-width: 992px){
+  header #navbar{
+    display: flex;
+    flex-direction: column; 
+    width: 17em;
+    height: 100vh;
+  }
+  .container-fluid{
+    display: flex;
+    flex-direction: column
+  }
+  .collapse ul{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  section{
+    margin-left: 30%;
+  }
+  #moi .mobil{
+    display: none;
+  }
+  #moi .laptop{
+    /* margin-top: 17.5em; */
+    padding-top: 17.5em;
+  }
+  #moi .content{
+    width: 40em;
+    margin: 0 auto
+  }
+  #moi .heading h2{
+    color: #9933cc;
+    text-transform: uppercase;
+    font-size: 4em;
+    border-bottom: 1px solid;
+  }
+  #moi h3{
+    font-size: 3.13em;
+    text-transform: uppercase;
+  }
+  #moi h4{
+    font-size: 1.9em;
+  }
+  #moi p{
+    font-size: 1.8em
+  }
+}
